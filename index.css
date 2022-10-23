@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+}
+.banner{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg);
+    background-size: cover;
+  }
+  .banner .content{
+    max-width: 900px;
+    text-align: center;
+  }
+  .banner  .content h2{
+    font-size: 5em;
+    color: #111;
+    margin-top: 10px;
+    display: flex;
+  }
+  .btn{
+    font-size: 1em;
+    color: #fff;
+    background: #2d2a5786;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 3px;
+    outline-color: none;  
+  }
+  .btn:hover{
+  
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  letter-spacing: 5px;
+  }
+  header{
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      padding: 40px 100px;
+      z-index: 10000;
+      display: flex;
+      justify-content:space-between;
+      transition: 0.5s;
+      float:right;
+  }
+  /* header.sticky{
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+} */
+
+  header .navigator{
+    position: relative;
+    display: flex;
+}
+header .navigator li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigator li a{
+   text-decoration: none;
+    color: #fff;
+    font-size: 500;
+}
+
+header .navigator li a:hover{
+  color: #b6ccdff8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.timer, .errors,
+.accuracy, .cpm, .wpm {
+  background-color: #69b2f1f8;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 2.75rem;
+}
+
+.quote {
+  background-color: #ccda46;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.input_area {
+  background-color: #f5f5c6;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}

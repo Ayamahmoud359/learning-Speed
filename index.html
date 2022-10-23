@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ًWrite</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <!-- <div class="full-screen-container">
+        <div class="login-container">
+          <h3 class="login-title">Welcome</h3>
+          <form action="index2.html" method="POST">
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" required />
+            </div>
+            <div class="input-group">
+              <label>Password</label>
+              <input type="password" required />
+            </div>
+            <button type="submit" class="login-button">Sign In</button>
+          </form>
+        </div>
+      </div> -->
+
+    <ul class="navigator">
+      <li><a href="#login">Log in</a></li>
+      <li><a href="Signup/Signup.html">Sign up</a></li>
+    </ul>
+  </header>
+  <section class="banner">
+    <div class="content">
+      <h2>Write</h2>
+      <br>
+      <a href="test/index.html"><button class="btn" onclick="">Let's Test</button></a>
+      
+    </div>
+  </section>
+  <div class="container">
+    <div class="heading"></div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+
+    <div class="quote">Click on the area below to start the game.</div>
+    <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restart_btn" onclick="resetValues()">Restart</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
